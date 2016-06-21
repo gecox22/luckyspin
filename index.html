@@ -23,7 +23,7 @@
                     <div id="left-menu" class="col-md-6">
                         <div id="wheel-col" class="col-md-10 col-lg-10 col-sm-8">
                             <div class="wheelcont">
-                                <div class="skincss wheel-one">
+                                <div class="skincss wheel-one wheel-active">
                                     <img class="wheelimg" src="lib/img/wheel1.png">
                                 </div>
                                 <div class="skincss wheel-two">
@@ -32,20 +32,12 @@
                                 <div class="skincss wheel-three">
                                     <img class="wheelimg" src="lib/img/wheel3.png">
                                 </div>
-                                <div class="skincss wheel-four wheel-active">
+                                <div class="skincss wheel-four">
                                     <img class="wheelimg" src="lib/img/wheel4.png">
                                 </div>
                             </div>
-                            <div class="spin-stats">
-                                <div class="total-spins">
-                                    Total Spins <span id="total_spins">0</span>
-                                </div>
-                                <div class="my-spins">
-                                    My Spins <span id="my_spins">0</span>
-                                </div>
-                            </div>
                             <div class="spinit">
-                                <span class="button spin-circle">Spin Circle!</span>
+                                <span class="button spin-circle">Spin!</span>
                             </div>
                         </div>
                         <div id="skin-col" class="col-md-2 col-lg-2 col-sm-4">
@@ -53,10 +45,10 @@
                                 <span id="toggleSound"></span>
                             </div>
                             <div class="wheel-skins">
-                                <div data-skin="wheel-one" class="skin-one change-skin"></div>
+                                <div data-skin="wheel-one" class="skin-one change-skin skin-active"></div>
                                 <div data-skin="wheel-two" class="skin-two change-skin"></div>
                                 <div data-skin="wheel-three" class="skin-three change-skin"></div>
-                                <div data-skin="wheel-four" class="skin-four change-skin skin-active"></div>
+                                <div data-skin="wheel-four" class="skin-four change-skin"></div>
                             </div>
                         </div>
                     </div>
@@ -73,7 +65,8 @@
                                 <div class="row">
                                     <div class="col-md-4">
                                         <div class="wager">Wager</div>
-                                        <div class="wager-result-div"><input id="wager-result" class="blinking" value="0"/>
+                                        <div class="wager-result-div">
+                                            <input id="wager-result" class="blinking" value="0" disabled />
                                         </div>
                                     </div>
                                     <div class="col-md-4">
@@ -113,8 +106,8 @@
                 <div id="controls-menu" class="row">
                     <div class="top-menu">
                         <ul class="user-menu">
-                            <li class="idle deposit-item"><a href="#">Deposit</a></li>
-                            <li class="idle withdraw-item"><a href="#">Withdraw</a></li>
+                            <li class="idle deposit-item"><a href="#" id="depositButton">Deposit</a></li>
+                            <li class="idle withdraw-item"><a href="#" id="withdrawButton">Withdraw</a></li>
                             <li class="idle forums-item">
                                 <a href="#" target="_blank">BitcoinTalk</a>
                             </li>
