@@ -225,22 +225,25 @@ html,body {
         color:#fff;
     background:#323e4a;
 }
-.table-spins {
+.table-spins, .my-table-spins  {
     margin:0 auto;
     width:100%;
     font-size:16px;
 }
-.table-spins thead td {
+.my-table-spins{
+    display: none;
+}
+.table-spins thead td, .my-table-spins thead td {
     font-weight: bold;
     font-size:110%;
 }
-.table-spins td {
+.table-spins td, .my-table-spins td {
     padding:5px;
 }
-.table-spins tbody tr:nth-child(odd) {
+.table-spins tbody tr:nth-child(odd), .my-table-spins tbody tr:nth-child(odd) {
     background: #e8ecf1;
 }
-.table-spins tr:nth-child(even) {
+.table-spins tr:nth-child(even), .my-table-spins tr:nth-child(even) {
     background: #FFF;
 }
 .table-result {
