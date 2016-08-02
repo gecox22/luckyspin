@@ -1074,22 +1074,22 @@ border-bottom:1px solid #ccc;
     padding: 5px;
 }
 
-.chat_message.mod{
+.chat_message.MOD{
     color: #9B59B6;
     background: rgba(155,89,182, 0.05);
 }
 
-.chat_message.admin{
+.chat_message.ADMIN{
     color: #E67E22;
     background: rgba(230,126,34, 0.05);
 }
 
-.chat_message.owner{
+.chat_message.OWNER{
     color: #C0392B;
     background: rgba(192,57,43, 0.05);
 }
 
-.chat_message.server{
+.chat_message.SERVER{
     color: #27AE60;
     background: rgba(39,174,96, 0.05);
 }
