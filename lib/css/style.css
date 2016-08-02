@@ -6,8 +6,8 @@ html,body {
 
 /* Top part background*/
 #top {
-	background-image: url("../img/background.jpg");
-	background-attachment: fixed;
+    background: #06042B url("../img/background.jpg") no-repeat;
+    background-attachment: fixed;
     background-color:#fff;
     padding: 25px 0px;
 }
@@ -189,6 +189,9 @@ html,body {
     padding:0;
     font-size:18px;
 }
+.user-submenu .idle a{
+    cursor: pointer;
+}
 .user-menu .idle a:hover, .user-menu .idle a:focus {
     border-bottom:2px solid #323e4a;
 }
@@ -230,12 +233,12 @@ html,body {
         color:#fff;
     background:#323e4a;
 }
-.table-spins, .my-table-spins  {
+.table-spins, .my-table-spins, .chat  {
     margin:0 auto;
     width:100%;
     font-size:16px;
 }
-.my-table-spins{
+.my-table-spins, .chat{
     display: none;
 }
 .table-spins thead td, .my-table-spins thead td {
@@ -1045,3 +1048,49 @@ border-bottom:1px solid #ccc;
     width: 100%;
     height: 5px;
 }
+
+#chat_monitor{
+    border-top: 1px solid rgba(0,0,0,0.2);
+    height: 500px;
+    padding: 5px;
+}
+
+.chat_message{
+    margin: 1px;
+}
+
+.chat_message .time{
+    font-weight: 100;
+    font-size: 12px;
+}
+
+.chat_message .username{
+    font-weight: bold;
+    padding: 5px;
+}
+
+.chat_message .message{
+    font-weight: normal;
+    padding: 5px;
+}
+
+.chat_message.mod{
+    color: #9B59B6;
+    background: rgba(155,89,182, 0.05);
+}
+
+.chat_message.admin{
+    color: #E67E22;
+    background: rgba(230,126,34, 0.05);
+}
+
+.chat_message.owner{
+    color: #C0392B;
+    background: rgba(192,57,43, 0.05);
+}
+
+.chat_message.server{
+    color: #27AE60;
+    background: rgba(39,174,96, 0.05);
+}
+

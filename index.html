@@ -87,16 +87,10 @@
                             <div class="stakes">
                                 <table>
                                     <tr>
-                                        <td><span id="10p" class="button-stake top-line">10%</span></td>
-                                        <td><span id="25p" class="button-stake top-line">25%</span></td>
-                                        <td><span id="50p" class="button-stake top-line">50%</span></td>
+                                        <td><span id="50p" class="button-stake top-line">½</span></td>
+                                        <td><span id="2x" class="button-stake top-line">2x</span></td>
+                                        <td><span id="min" class="button-stake top-line">Min</span></td>
                                         <td><span id="max" class="button-stake top-line">Max</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td><span id="100" class="button-stake bot-line">100</span></td>
-                                        <td><span id="1000" class="button-stake bot-line">1000</span></td>
-                                        <td><span id="10000" class="button-stake bot-line">10 000</span></td>
-                                        <td><span id="reset" class="button-stake bot-line">Reset</span></td>
                                     </tr>
                                 </table>
                             </div>
@@ -112,15 +106,14 @@
                         <ul class="user-menu">
                             <li class="idle deposit-item"><a href="#" id="depositButton">Deposit</a></li>
                             <li class="idle withdraw-item"><a href="#" id="withdrawButton">Withdraw</a></li>
-                            <li class="idle forums-item">
-                                <a href="#" target="_blank">BitcoinTalk</a>
-                            </li>
+                            <li class="idle forums-item"><a href="#" target="_blank">BitcoinTalk</a></li>
                             <li class="idle highlight earn-item"><a href="#" id="faucetButton">Faucet</a></li>
                         </ul>
 
                         <ul class="user-submenu">
                             <li class="idle selected" id="allBetsButton"><a>Global Spins</a></li>
                             <li class="idle" id="myBetsButton"><a>My Spins</a></li>
+                            <li class="idle" id="chatButton"><a>Chat</a></li>
                         </ul>
                     </div>
                 </div>
@@ -143,6 +136,7 @@
                             <thead>
                                 <tr>
                                     <td>ID</td>
+                                    <td>Player Name</td>
                                     <td style="width:80px;">Result</td>
                                     <td>Bet</td>
                                     <td>Return</td>
@@ -151,6 +145,38 @@
                             <tbody id="mybet_history">
                             </tbody>
                         </table>
+                        <div class="chat">
+                            <div>
+                                <input class="form-control" type="text" name="chat_input" id="chat_input" placeholder="Chat here...">
+                            </div>
+                            <div id="chat_monitor">
+                                <div class="chat_message">
+                                    <span class="time">19:35</span>
+                                    <span class="username">Dexon:</span>
+                                    <span class="message">Hellow World! (user)</span>
+                                </div>
+                                <div class="chat_message mod">
+                                    <span class="time">19:10</span>
+                                    <span class="username">Dexon:</span>
+                                    <span class="message">Hellow World! (mod)</span>
+                                </div>
+                                <div class="chat_message admin">
+                                    <span class="time">19:00</span>
+                                    <span class="username">Dexon:</span>
+                                    <span class="message">Hellow World! (admin)</span>
+                                </div>
+                                <div class="chat_message owner">
+                                    <span class="time">18:45</span>
+                                    <span class="username">Dexon:</span>
+                                    <span class="message">Hellow World! (owner)</span>
+                                </div>
+                                <div class="chat_message server">
+                                    <span class="time">18:30</span>
+                                    <span class="username">Server:</span>
+                                    <span class="message">Hellow World! (server)</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
