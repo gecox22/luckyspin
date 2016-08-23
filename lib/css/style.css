@@ -290,6 +290,51 @@ body {
     top: 50%;
     margin-top: -30px;
 }
+.table-result {
+    position: relative;
+}
+.table-result.up:after {
+    top: 0;
+    color: #35ff02;
+    display: inline-block;
+    font-family: "Glyphicons Halflings";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    content: "\e253";
+    font-size: 80%;
+    position: absolute;
+    right: 15px;
+    vertical-align: middle;
+}
+.table-result.down:after {
+    top: 0;
+    color: #f84545;
+    display: inline-block;
+    font-family: "Glyphicons Halflings";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    content: "\e252";
+    font-size: 80%;
+    position: absolute;
+    right: 15px;
+    vertical-align: middle;
+}
+.table-result.equal:after {
+    top: 0;
+    color: #E1C701;
+    display: inline-block;
+    font-family: "Glyphicons Halflings";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    content: "\2212";
+    font-size: 80%;
+    position: absolute;
+    right: 15px;
+    vertical-align: middle;
+}
 .wheel-skins {
     margin-top: 100px;
 }
