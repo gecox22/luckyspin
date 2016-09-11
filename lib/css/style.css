@@ -211,6 +211,7 @@ body {
     font-size: 16px;
 }
 .my-table-spins,
+.autobet,
 .chat {
     display: none;
 }
