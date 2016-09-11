@@ -114,6 +114,7 @@
                         <ul class="user-submenu">
                             <li class="idle selected" id="allBetsButton"><a>Global Spins</a></li>
                             <li class="idle" id="myBetsButton"><a>My Spins</a></li>
+                            <li class="idle" id="autoBetButton"><a>Autobet</a></li>
                             <li class="idle" id="chatButton"><a>Chat</a> <span id="chatOnlineUsersCount"></span> users online</li>
                         </ul>
                     </div>
@@ -146,6 +147,18 @@
                             <tbody id="mybet_history">
                             </tbody>
                         </table>
+						 <div class="autobet">
+                            <div>
+                                <input class="form-control" type="text" name="autobet_input_loss" id="autobet_input_loss" placeholder="Multiply on loss %">
+                                <input class="form-control" type="text" name="autobet_input_win" id="autobet_input_win" placeholder="Multiply on win %">
+                                <input class="form-control" type="text" name="start_after_bets" id="start_after_bets" placeholder="Increase after ... losses">
+                                <input class="form-control" type="text" name="max_bet" id="max_bet" placeholder="Maximum Bet">
+                                <input class="form-control" type="text" name="total_bets" id="total_bets" placeholder="Stop after ... bets">
+								<button type="button" id="startautobet">Start</button>
+                            </div>
+                            <div id="autobet_monitor">
+                            </div>
+                        </div>
                         <div class="chat">
                             <div>
                                 <input class="form-control" type="text" name="chat_input" id="chat_input" placeholder="Not connected" disabled>
